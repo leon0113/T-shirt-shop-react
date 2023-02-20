@@ -1,0 +1,13 @@
+.tshirt{
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+  height: 400px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.tshirt img{
+    height: 250px;
+}
