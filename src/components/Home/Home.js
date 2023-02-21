@@ -8,11 +8,22 @@ const Home = () => {
     const [tshirts, setTshirts] = useTshirt();
 
     const [cart, setCart] = useState([]);
+
     const handleAddtoCartBtn = (selectedItem) => {
-        const newCart = [...cart, selectedItem];
-        setCart(newCart);
+        const exists = cart.find(tshirt => tshirt._id === selectedItem._id)
+        if (!exists) {
+            const newCart = [...cart, selectedItem];
+            setCart(newCart);
+        }
+        else {
+            alert('This item is already selected');
+        }
     }
 
+    const handleRemoveFromCart = (selectedItem) => {
+        const rest = cart.filter(tshirt => tshirt._id !== selectedItem._id);
+        setCart(rest);
+    }
 
     return (
         <div className='home-container'>
@@ -26,7 +37,10 @@ const Home = () => {
                 }
             </div>
             <div className="cart-container">
-                <Cart cart={cart}></Cart>
+                <Cart
+                    cart={cart}
+                    handleRemoveFromCart={handleRemoveFromCart}
+                ></Cart>
             </div>
         </div>
     );
