@@ -1,13 +1,14 @@
 .tshirt{
-    margin-top: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 20px;
+  margin: 20px 10px 20px 10px;
   height: 400px;
-  border: 1px solid black;
+  border: 1px solid rgb(97, 179, 72);
   border-radius: 20px;
 }
 
 .tshirt img{
     height: 250px;
+}
+
+.tshirt button{
+    cursor: pointer;
 }
