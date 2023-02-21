@@ -31,7 +31,9 @@ const Cart = ({ handleRemoveFromCart, cart }) => {
             {cart.length === 3 && <h3 className='h3'>Three items selected</h3>}
             {command}
             {cart.length < 4 ? <p>Keep adding</p> : <button>Remove all</button>}
-            {cart.length === 5 && <button className='h3'>Review all</button>}
+            {cart.length === 5 && <button className='h3'>Review orders
+
+            </button>}
         </div>
     );
 };
