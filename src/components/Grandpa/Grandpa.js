@@ -7,7 +7,7 @@ import Uncle from '../Uncle/Uncle';
 const Grandpa = () => {
     const [house, setHouse] = useState(1);
 
-    const ornament = 'Diamond Ring'; \
+    const ornament = 'Diamond Ring';
 
 
 
