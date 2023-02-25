@@ -9,7 +9,7 @@ const Grandpa = () => {
 
     const ornament = 'Diamond Ring';
 
-
+    g
 
     const handleBuyAHouse = () => {
         const newHouse = house + 1;
