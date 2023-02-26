@@ -21,7 +21,7 @@ const Grandpa = () => {
             <h1>This is Grandpa component</h1>
             <p>House: {house} <button onClick={handleBuyAHouse}>Buy a house</button> </p>
             <section style={{ display: 'flex' }}>
-                <Father house={house}></Father>
+                <Father house={house} ornament={ornament}></Father>
                 <Anty house={house}></Anty>
                 <Uncle house={house}></Uncle>
             </section>
