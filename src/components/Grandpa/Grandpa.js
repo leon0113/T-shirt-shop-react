@@ -19,7 +19,7 @@ const Grandpa = () => {
     }
 
     return (
-        <RingContext.Provider value={ornament}>
+        <RingContext.Provider value={[house, setHouse]}>
             <div className='grandpa'>
                 <h1>This is Grandpa component</h1>
                 <p>House: {house} <button onClick={handleBuyAHouse}>Buy a house</button> </p>
